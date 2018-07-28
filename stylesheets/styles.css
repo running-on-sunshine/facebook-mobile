@@ -1,0 +1,239 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 10px;
+}
+
+.navigational-header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+    background-color: #3b5998;
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+    border-bottom: 1px solid #133783;
+    height: 4em;
+    padding-bottom: 0.1em;
+}
+
+.fb-logo-plus-icons {
+    margin-left: 1em;
+    width: 8em;
+    height: 3em;
+}
+
+.fb-logo-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.fb-search-plus-profile {
+    width: 25em;
+    height: 1.4em;
+    margin-bottom: 1em;
+}
+
+.search-bar {
+    width: 75%;
+    outline: none;
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+
+.search-bar::placeholder {
+    font: arial, sans-serif;
+    color: rgb(256,256,256);
+}
+
+.navigational-links {
+    color: rgb(256,256,256);
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.all-content {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+    /* justify-content: space-between; */
+    /* border-bottom: 0.2em solid rgba(155, 152, 152, 0.808); */
+}
+
+.menu-container {
+    padding-right: 2.5em;
+    /* padding-left: 0.5em; */
+    margin-bottom: 1em;
+}
+
+.menu-title {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: gray;
+}
+
+.menu-links {
+    display: block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font: arial, sans-serif;
+}
+
+.main-posts {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.add-status-links {
+    margin-bottom: 0.5em;
+}
+
+.add-status {
+    font-size: 1.3em;
+    margin-right: 1em;
+}
+
+.status {
+    padding-top: 0.5em;
+    padding-bottom: 1.4em;
+    border-bottom: 0.2em solid rgba(155, 152, 152, 0.808);
+    /* flex: 1; */
+}
+
+.update-status-input {
+    outline: none;
+    border: 0.1em solid gray;
+    width: 80%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 0.2em solid rgba(155, 152, 152, 0.808);
+    font-size: 1.2em;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.sponsors-header {
+    /* margin-top: 0.5em; */
+    font-size: 1.2em;
+}
+
+.sponsors-post-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    /* margin-left: 0.5em; */
+    /* margin-right: 2.5em; */
+}
+
+.sponsors-post {
+    /* padding-left: 1em; */
+    padding-right: 2.5em;
+    font-size: 1.2em;
+    margin-bottom: 2.5em;
+    /* border-right: 2px solid rgba(155, 152, 152, 0.808); */
+}
+
+.sponsor {
+    /* padding-left: 0.5em;
+    padding-right: 0.5em; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .fb-search-plus-profile {
+        width: 40em;
+        margin-left: 6em;
+        margin-bottom: 1em;
+    }
+
+    /* input.search-bar, textarea{
+        background: rgb(256,256,256);
+    } */
+
+    .all-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 1.5em;
+    }
+
+    .menu {
+        width: 18%;
+        flex-direction: column;
+        padding-left: 1.8em;
+        /* padding-bottom: 2em; */
+        border-right: 0.2em solid rgba(155, 152, 152, 0.808);
+    }
+    .main-posts {
+        width: 70%;
+        padding-left: 1.5em;
+        margin-right: 1em;
+        overflow-y: auto;
+    }
+    .sponsors {
+        padding-top: 2em;
+        padding-left: 2em;
+        overflow-x: auto;
+    }
+}
+
+@media(min-width: 1024px) {
+    /* .all-content{
+        font-size: 1.4em;
+    } */
+
+    .menu {
+        /* font-size: 1.4em; */
+        width: 15%;
+    }
+    .main-posts {
+        /* font-size: 1.4em; */
+        width: 55%;
+    }
+    .sponsors-post-container {
+        flex-direction: column;
+    }
+    .sponsors {
+        /* font-size: 1.4em; */
+        flex-direction: column;
+        width: 20%;
+        padding-top: 0;
+        /* padding-left: 2em; */
+    }
+}
+
+@media(min-width: 1200px) {
+    .menu {
+        width: 15%;
+    }
+    .main-posts {
+        width: 60%;
+    }
+    .sponsors {
+        width: 15%;
+        /* padding-right: 10px; */
+    }
+}
